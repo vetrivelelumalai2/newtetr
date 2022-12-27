@@ -1,54 +1,53 @@
+
+Adarsh-Goel
+/
+Filestreambot-pro
+Public
+Code
+Issues
+1
+Pull requests
+Actions
+Projects
+Security
+Insights
+Filestreambot-pro/Adarsh/template/req.html
+@Adarsh-Goel
+Adarsh-Goel Feat: Added 4GB Files Support✨
+ 1 contributor
+74 lines (65 sloc)  3.09 KB
+<!--(c) adarsh-goel-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="https://i.postimg.cc/k4qq2Kb7/opus.png" itemprop="thumbnailUrl">
+    <meta property="og:image" content="https://i.ibb.co/M8S0Zzj/live-streaming.png" itemprop="thumbnailUrl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>%s</title>
-    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
+    <link rel="stylesheet" type='text/css' href="https://adarsh-goel.github.io/resources/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-    
-        									 
-<style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
-      }
-    </style>
-    <style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+
 </head>
 
 <body>
-	
     <header>
-        <marquee bgcolor="#4B0082"
-<div class="toogle"></div>
+        <div class="toogle"></div>
         <div id="file-name">
-            %s
+           <marquee direction = "left"> %s</marquee>
         </div>
-</marquee>
     </header>
 <iframe data-aa='2141213' src='//ad.a-ads.com/2141213?size=320x100' style='width:320px; height:100px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
     <div class="container">
         <tag src="%s" class="player"></tag>
     </div>
-<iframe data-aa='2141213' src='//ad.a-ads.com/2141213?size=320x100' style='width:320px; height:100px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
     
-
+    <iframe data-aa='2141213' src='//ad.a-ads.com/2141213?size=320x100' style='width:320px; height:100px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
     
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+    
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
 	<script>
         const controls = [
               
@@ -74,6 +73,10 @@
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
+        toogle.onclick = () => {
+            body.classList.toggle('dark')
+            footer.classList.toggle('dark')
+        }
     </script>
 </body>
 </html>
