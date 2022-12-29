@@ -95,9 +95,9 @@ async def private_receive_handler(c: Client, m: Message):
     try:
 
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        stream_link = f"https://killadiclub.xyz/st?api=42907ef73e4b9e28698e3b042c4ad6a5861681a5&url={Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        online_link = f"https://killadiclub.xyz/st?api=42907ef73e4b9e28698e3b042c4ad6a5861681a5&url={Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
         photo_xr="https://telegra.ph/file/3cd15a67ad7234c2945e7.jpg"
         
